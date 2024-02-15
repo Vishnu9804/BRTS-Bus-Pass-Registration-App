@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">BRTS BUS PASS</string>
+    <string name="hyperlink"><u><a>Sign Up</a></u></string>
+    <string name="hyperlink1"><u><a>Log In</a></u></string>
+    <string name="hyperlink2"><u><a>Forget Password ?</a></u></string>
+    <string name="select_date"><u>Date of Birth:-</u></string>
+    <string name="url">192.168.0.111</string>
+    <string name="status"><u><h1>STATUS</h1></u></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <array name="City"><item>Surat</item>>
+    </array>
+    <string-array name="Category">
+        <item>Student</item>
+        <item>Citizen</item>
+        <item>Senior Citizen</item>
+        <item>Handicap</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slot_full"></string>
+
+    <string name="n1">"Hello"</string>
+    <string name="n2">"Helloing"</string>
+    <string name="n3">"Bye"</string>
+
+    <string name="ContactUs"><u>Contact Us</u></string>
+    <string name="SendFeedback"><u><a>Send Feedback</a></u></string>
+    <string name="SlotBooking"><u>Slot Booking</u></string>
+    <string name="UploadDocument"><u>Upload Document</u></string>
+
+</resources>
+
+
