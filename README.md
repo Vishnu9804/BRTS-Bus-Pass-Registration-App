@@ -16,7 +16,7 @@ The BRTS Bus Pass Online Registration System is a web application designed to st
 
 ## Installation
 
-1. **Clone the repository:**
+1. **Clone the repository:-**
 
    ```bash
    git clone https://github.com/Vishnu9804/brts-bus-pass.git
