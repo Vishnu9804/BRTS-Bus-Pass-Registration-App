@@ -3,7 +3,7 @@
 
 ## Overview
 
-The BRTS Bus Pass Online Registration System is a web application designed to streamline the process of registering and managing bus passes for the Bus Rapid Transit System. This application provides a user-friendly interface for passengers to apply for, renew, and manage their bus passes conveniently online.
+The BRTS Bus Pass Online Registration System is a web application designed to streamline the process of registering and managing bus passes for the Bus Rapid Transit System. This application provides a user-friendly interface for passengers to apply for, renew, and manage their bus passes conveniently online.App is built in android and java.
 
 ## Features
 
