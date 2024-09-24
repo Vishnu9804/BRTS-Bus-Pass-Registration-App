@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollviewpersnoldetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/orange"
+    tools:context="Fragment_sbook">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/cordlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".nav_drawer">
+
+
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageperson"-->
+        <!--            android:layout_width="98dp"-->
+        <!--            android:layout_height="82dp"-->
+        <!--            android:layout_marginStart="16dp"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:srcCompat="@drawable/ic_persondetail"-->
+        <!--            tools:ignore="MissingConstraints"-->
+        <!--            tools:layout_editor_absoluteY="16dp" />-->
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/teal_orange"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:text="@string/SlotBooking"
+            android:textSize="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Enter your preferable Date and Time"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="20dp"
+            app:flow_horizontalBias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <Button
+            android:id="@+id/date"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/orange"
+            android:text="2023-01-01"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_goneMarginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@id/tv_date"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+        <View
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/date"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:textSize="22dp"
+            android:text="Morning Sessions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:flow_horizontalBias="0.5"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/l1"
+            />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_morning"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="10 AM - 11 AM"
+                android:fontFamily="serif"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/round_border"
+                android:textSize="18dp"/>
+            <RadioButton
+                android:id="@+id/r2"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_border"
+                android:text="11 AM - 12 PM"
+                android:fontFamily="serif"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="18dp"/>
+
+            <View
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/rg1"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_evening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:text="Evening Sessions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:flow_horizontalBias="0.5"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/l2"
+                />
+
+            <RadioButton
+                android:id="@+id/r3"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_border"
+                android:text="4 PM - 5 PM"
+                android:fontFamily="serif"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="18dp"/>
+
+            <RadioButton
+                android:id="@+id/r4"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="5 PM - 6 PM"
+                android:fontFamily="serif"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/round_border"
+                android:textSize="18dp"/>
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:text="SUBMIT"
+            android:onClick="submit"
+            android:backgroundTint="@color/orange"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:flow_horizontalBias="0.5"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/rg"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="-42dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="-219dp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left" />
+
+        <TextView
+            android:id="@+id/slot_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/slot_full"
+            android:textColor="@color/red"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</ScrollView>

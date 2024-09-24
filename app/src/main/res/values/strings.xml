@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BRTS BUS PASS</string>
+    <string name="hyperlink"><u><a>Sign Up</a></u></string>
+    <string name="hyperlink1"><u><a>Log In</a></u></string>
+    <string name="hyperlink2"><u><a>Forget Password ?</a></u></string>
+    <string name="resend_otp"><u><a>Resend OTP</a></u></string>
+    <string name="select_date"><u>Date of Birth:-</u></string>
+    <string name="url">192.168.0.111</string>
+    <string name="status"><u><h1>STATUS</h1></u></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <array name="City"><item>Surat</item>>
+    </array>
+    <string-array name="Category">
+        <item>Student</item>
+        <item>Citizen</item>
+        <item>Senior Citizen</item>
+        <item>Handicap</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slot_full"></string>
+
+    <string name="n1">"\n<b><font size="32">Register For Bus Pass</font></b>\n\n<font size="20">Get Your BRTS Bus Pass Online with Ease of Access"</font></string>
+    <string name="n2">"\n<b><font size="32">Check Your Status</font></b>\n\n<font size="20">Keep In Touch With Status For Availability Of Bus Pass"</font>"</string>
+    <string name="n3">"\n<b><font size="32">Get Your Bus Pass</font></b>\n\n<font size="20">After Offline Verification User Can Get Bus Pass In App And Also Delievered To Home"</font>"</string>
+
+    <string name="ContactUs"><u>Contact Us</u></string>
+    <string name="SendFeedback"><u><a>Send Feedback</a></u></string>
+    <string name="SlotBooking"><u>Slot Booking</u></string>
+    <string name="UploadDocument"><u>Upload Document</u></string>
+    <string name="buspass"><u>Bus Pass</u></string>
+    <string name="Profile"><u>Profile</u></string>
+
+</resources>
+
+
