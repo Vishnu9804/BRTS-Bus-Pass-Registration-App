@@ -35,7 +35,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MainActivity extends  {
+public class MainActivity extends AppCompatActivity {
 
     TextView textView1;
     TextView textView2;
