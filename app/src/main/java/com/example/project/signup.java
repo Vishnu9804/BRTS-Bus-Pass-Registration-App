@@ -75,8 +75,6 @@ public class signup extends AppCompatActivity {
     //    ActivityResultLauncher<Intent> resultLauncher;
     CoordinatorLayout layout;
 
-
-
     private EditText etuName, etEmail;
     private TextView tvStatus;
     private Button btnRegister;
@@ -119,7 +117,6 @@ public class signup extends AppCompatActivity {
         gender=(RadioGroup) findViewById(R.id.RadioGrp);
 
         layout = findViewById(R.id.cordlayout);
-
 
         btnRegister = findViewById(R.id.button);
 //        pickiT = new PickiT(this, this, this);
@@ -253,7 +250,6 @@ public class signup extends AppCompatActivity {
                 dateButton.setText(date);
             }
         };
-
         Calendar cal = Calendar.getInstance();
         int year = cal.get(Calendar.YEAR);
         int month = cal.get(Calendar.MONTH);
@@ -303,7 +299,6 @@ public class signup extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-
 //    public void save(View view) {
 //        username = etuName.getText().toString().trim();
 //        email = etEmail.getText().toString().trim();
@@ -350,8 +345,6 @@ public class signup extends AppCompatActivity {
 //    }
 
     public void save(View view){
-
-
         String userName = etuName.getText().toString().trim();
         String password = password1.getText().toString().trim();
         String email = etEmail.getText().toString().trim();
@@ -386,11 +379,8 @@ public class signup extends AppCompatActivity {
                         Log.e("success_response",""+response.code());
                         Log.e("success_response",""+response.isSuccessful());
                         Log.e("success_response",""+response.body());
-
                         RegisterRequest apiResponse = response.body();
                         Log.e("success_msg",""+response.body().getMsg());
-
-
                         Toast.makeText(signup.this, "Signup Successfully", Toast.LENGTH_SHORT).show();
 
 //                if(response.body().getMsg().equals("User Login Successfully")){
@@ -403,16 +393,13 @@ public class signup extends AppCompatActivity {
 //                    u_password.setError("Enter Valid Password");
 //                }
                     }
-
                     @Override
                     public void onFailure(Call<RegisterRequest> call, Throwable t) {
                         Log.e("fail_response",""+call.request().url());
                         Log.e("fail_response",""+t.toString());
                         Log.e("fail_response",""+t.getMessage());
-
                     }
                 });
-
             } else {
                 password2.setError("Password Does Not Match");
                 Snackbar snackbar
@@ -433,7 +420,6 @@ public class signup extends AppCompatActivity {
 
                 snackbar.show();
             }
-
         }
         else {
 //            Toast.makeText(this, "Fields Cannot Be Empty", Toast.LENGTH_SHORT).show();
@@ -465,13 +451,8 @@ public class signup extends AppCompatActivity {
                     });
 
             snackbar.show();
-
         }
-
-
-
     }
-
 
     //    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
 //        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -487,8 +468,7 @@ public class signup extends AppCompatActivity {
 //            Toast.makeText(signup.this, "Permission Denied", Toast.LENGTH_SHORT).show();
 //        }
 //    }
-//
-//
+    
 //    @Override
 //    public void PickiTonUriReturned() {
 //
@@ -542,8 +522,7 @@ public class signup extends AppCompatActivity {
 //        Log.e("waahhhhh>>>", "kemmmm6ooo : " + Reason);
 //
 //    }
-    public void openDatePicker(View view)
-    {
+    public void openDatePicker(View view){
         datePickerDialog.show();
     }
 
@@ -552,9 +531,6 @@ public class signup extends AppCompatActivity {
 ////        String id = Id.u_id;
 //
 //        String id = "4";
-//
-//
-//
 //
 //        RequestBody requestId = RequestBody.create(MediaType.parse("multipart/form-data"), id);
 //        Call<BonafideRequest> bonafideRequestCall = APIclient.getUserService().userBonafide(multipartDoc, requestId);
@@ -572,7 +548,6 @@ public class signup extends AppCompatActivity {
 //                BonafideRequest apiResponse = response.body();
 //                Log.e("success_msg", "" + response.body().getMsg());
 //
-//
 ////                if(response.body().getMsg().equals("User Login Successfully")){
 //                if (response.body().getMsg().equals("File Inserted Successfully")) {
 //                    Log.d("Uploaded", "Upload Success");
@@ -587,14 +562,11 @@ public class signup extends AppCompatActivity {
 ////                    u_username.setError("Enter Valid Username");
 ////                    u_password.setError("Enter Valid Password");
 ////                }
-//
-//
 //            @Override
 //            public void onFailure(Call<BonafideRequest> call, Throwable t) {
 //                Log.e("fail_response", "" + call.request().url());
 //                Log.e("fail_response", "" + t.toString());
 //                Log.e("fail_response", "" + t.getMessage());
-//
 //            }
 //        });
 //    }
