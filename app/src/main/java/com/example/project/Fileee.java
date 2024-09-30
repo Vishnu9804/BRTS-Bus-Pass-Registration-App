@@ -3,7 +3,6 @@ package com.example.project;
 import android.content.Context;
 import android.net.Uri;
 import android.os.ParcelFileDescriptor;
-
 import java.io.File;
 import java.io.FileDescriptor;
 import java.io.FileInputStream;
@@ -13,7 +12,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class Fileee {
-
     public void saveAnswerFileFromUri(Uri uri, File destFile, Context context) {
         try {
             ParcelFileDescriptor pfd = context.getContentResolver().openFileDescriptor(uri, "r");
@@ -26,16 +24,11 @@ public class Fileee {
                 while (fileInputStream.read(buffer) > 0) {
                     fileOutputStream.write(buffer, 0, length);
                 }
-
                 fileOutputStream.flush();
                 fileInputStream.close();
                 fileOutputStream.close();
                 pfd.close();
-
             }
-
-        } catch (IOException e) {
-
-        }
+        } catch (IOException e) {}
     }
 }
